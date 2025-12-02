@@ -7,17 +7,43 @@ const lista = document.getElementById("lista_output");
 
 console.log(lista);
 
+const fizz="fizz";
+
+const buzz="buzz"
+
 
 // prima faccio stampare i numeri da 1 a 100
 
 
 
-for ( let i=0; i<=100; i++) {
+for ( let i=1; i<=10; i++) {
+
+    if ( i % 3 === 0) {
 
     let contenutoUlMomentaneo = lista.innerHTML;
 
         console.log(contenutoUlMomentaneo);
 
-         lista.innerHTML += `<li> il numero è ${i} </li>`;
+         lista.innerHTML += `<li class=fizz> il numero è ${fizz} </li>`;
     
+} else if ( i % 5 === 0) {
+
+     let contenutoUlMomentaneo = lista.innerHTML;
+
+        console.log(contenutoUlMomentaneo);
+
+         lista.innerHTML += `<li class=buzz> il numero è ${buzz} </li>`;
+
+} else {
+    
+    let contenutoUlMomentaneo = lista.innerHTML;
+
+        console.log(contenutoUlMomentaneo);
+
+         lista.innerHTML += `<li> il numero è ${i} </li>`;
+
+ 
 }
+
+}
+
