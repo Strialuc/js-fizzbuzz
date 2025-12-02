@@ -9,40 +9,49 @@ console.log(lista);
 
 const fizz="fizz";
 
-const buzz="buzz"
+const buzz="buzz";
+
+const fizzBuzz="FizzBuzz";
 
 
 // prima faccio stampare i numeri da 1 a 100
 
 
 
-for ( let i=1; i<=10; i++) {
+for ( let i=1; i<=30; i++) {
 
-    if ( i % 3 === 0) {
+    if ( i % 3 === 0 && i % 5 === 0) {
 
     let contenutoUlMomentaneo = lista.innerHTML;
 
         console.log(contenutoUlMomentaneo);
 
-         lista.innerHTML += `<li class=fizz> il numero è ${fizz} </li>`;
+         lista.innerHTML += `<li class=fizz-buzz> il numero è ${fizzBuzz} </li>`;
     
-} else if ( i % 5 === 0) {
+} else if ( i % 3 === 0) {
 
      let contenutoUlMomentaneo = lista.innerHTML;
 
         console.log(contenutoUlMomentaneo);
 
-         lista.innerHTML += `<li class=buzz> il numero è ${buzz} </li>`;
+         lista.innerHTML += `<li class=fizz > il numero è ${fizz} </li>`;
 
-} else {
+} else if ( i % 5 === 0){
     
     let contenutoUlMomentaneo = lista.innerHTML;
 
         console.log(contenutoUlMomentaneo);
 
-         lista.innerHTML += `<li> il numero è ${i} </li>`;
+         lista.innerHTML += `<li class=buzz > il numero è ${buzz} </li>`;
 
  
+} else {
+
+    let contenutoUlMomentaneo = lista.innerHTML;
+
+        console.log(contenutoUlMomentaneo);
+
+         lista.innerHTML += `<li> il numero è ${i} </li>`;
 }
 
 }
