@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.fizz{
+
+    color: red;
+    font-weight: bold;
+
+}
+
+.buzz{
+
+    color: blue;
+    font-weight: bold;
+
+}
+
+.fizz-buzz{
+
+    color: gray;
+    font-weight: bold;
+
+}

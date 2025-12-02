@@ -7,9 +7,9 @@ const lista = document.getElementById("lista_output");
 
 console.log(lista);
 
-const fizz="fizz";
+const fizz="Fizz";
 
-const buzz="buzz";
+const buzz="Buzz";
 
 const fizzBuzz="FizzBuzz";
 
@@ -18,7 +18,7 @@ const fizzBuzz="FizzBuzz";
 
 
 
-for ( let i=1; i<=30; i++) {
+for ( let i=1; i<=100; i++) {
 
     if ( i % 3 === 0 && i % 5 === 0) {
 
@@ -26,7 +26,7 @@ for ( let i=1; i<=30; i++) {
 
         console.log(contenutoUlMomentaneo);
 
-         lista.innerHTML += `<li class=fizz-buzz> il numero è ${fizzBuzz} </li>`;
+         lista.innerHTML += `<li class=fizz-buzz>${fizzBuzz} </li>`;
     
 } else if ( i % 3 === 0) {
 
@@ -34,7 +34,7 @@ for ( let i=1; i<=30; i++) {
 
         console.log(contenutoUlMomentaneo);
 
-         lista.innerHTML += `<li class=fizz > il numero è ${fizz} </li>`;
+         lista.innerHTML += `<li class=fizz >${fizz} </li>`;
 
 } else if ( i % 5 === 0){
     
@@ -42,7 +42,7 @@ for ( let i=1; i<=30; i++) {
 
         console.log(contenutoUlMomentaneo);
 
-         lista.innerHTML += `<li class=buzz > il numero è ${buzz} </li>`;
+         lista.innerHTML += `<li class=buzz >${buzz} </li>`;
 
  
 } else {
